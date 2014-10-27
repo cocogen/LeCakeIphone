@@ -11,7 +11,6 @@
 		631242E019FA300F00A0468C /* headerTitleBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 631242DF19FA300F00A0468C /* headerTitleBg.png */; };
 		631242E419FA326300A0468C /* segmentSelect_BG.png in Resources */ = {isa = PBXBuildFile; fileRef = 631242E319FA326300A0468C /* segmentSelect_BG.png */; };
 		6315C4D619FDDA610018E4B5 /* DataEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 6315C4D519FDDA610018E4B5 /* DataEngine.m */; };
-		632370CD19FE9B2C00E65969 /* testSVNfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 632370CC19FE9B2C00E65969 /* testSVNfile.m */; };
 		632F357D19F9E7C400B46F7C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 632F357C19F9E7C400B46F7C /* LoginViewController.m */; };
 		632F357F19F9E92900B46F7C /* icon48_wx_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 632F357E19F9E92900B46F7C /* icon48_wx_button.png */; };
 		6342E6EF19F8D34C00A97453 /* QQConnection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6342E6D419F8D34C00A97453 /* QQConnection.framework */; };
@@ -120,8 +119,6 @@
 		631242E319FA326300A0468C /* segmentSelect_BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = segmentSelect_BG.png; sourceTree = "<group>"; };
 		6315C4D419FDDA610018E4B5 /* DataEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataEngine.h; sourceTree = "<group>"; };
 		6315C4D519FDDA610018E4B5 /* DataEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataEngine.m; sourceTree = "<group>"; };
-		632370CB19FE9B2C00E65969 /* testSVNfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testSVNfile.h; sourceTree = "<group>"; };
-		632370CC19FE9B2C00E65969 /* testSVNfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testSVNfile.m; sourceTree = "<group>"; };
 		632F357B19F9E7C400B46F7C /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		632F357C19F9E7C400B46F7C /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		632F357E19F9E92900B46F7C /* icon48_wx_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon48_wx_button.png; sourceTree = "<group>"; };
@@ -326,8 +323,6 @@
 			children = (
 				6315C4D419FDDA610018E4B5 /* DataEngine.h */,
 				6315C4D519FDDA610018E4B5 /* DataEngine.m */,
-				632370CB19FE9B2C00E65969 /* testSVNfile.h */,
-				632370CC19FE9B2C00E65969 /* testSVNfile.m */,
 			);
 			name = DataEngine;
 			sourceTree = "<group>";
@@ -916,7 +911,6 @@
 				639DCDBB19F8937B0073FBEF /* AFURLResponseSerialization.m in Sources */,
 				639DCDC319F893AF0073FBEF /* AFSecurityPolicy.m in Sources */,
 				6315C4D619FDDA610018E4B5 /* DataEngine.m in Sources */,
-				632370CD19FE9B2C00E65969 /* testSVNfile.m in Sources */,
 				639DCDBA19F8937B0073FBEF /* AFURLRequestSerialization.m in Sources */,
 				63F4982719F758A5001AF8AD /* UINavigationBar+Customizer.m in Sources */,
 				638E948F19F65A5000A06546 /* CMTabBarController.m in Sources */,

@@ -52,7 +52,7 @@
         NSLog(@"responseSerializer =%lu",(unsigned long)operation.responseStringEncoding);
         //operation.responseSerializer setStringEncoding:@"UTF-8"
         operation.userInfo = tmpUserInfo;
-        NSLog(@"uuisString百度 = 确实呢 怎么了呢 %@,responseObject = %@,current thread = %@",operation.uuidString,responseObject,[NSThread currentThread]);
+        NSLog(@"uuisString百度 = try again %@,responseObject = %@,current thread = %@",operation.uuidString,responseObject,[NSThread currentThread]);
         
         __strong __typeof(CMViewController)*strongSelf = weakSelf;
         [strongSelf parseJsonData:strongSelf withTag:[(NSNumber *)[operation.userInfo objectForKey:@"tag"] intValue]];
