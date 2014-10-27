@@ -231,4 +231,20 @@
     [self.cMTabBarItem setNormalTitleColor:[UIColor lightGrayColor]];
     [self.cMTabBarItem setSelectedTitleColor:[UIColor whiteColor]];
 }
+
+- (void)reflashUI:(UIViewController *)vc
+{
+    if (vc == self)
+    {
+        NSLog(@"vc is Eaqual self");
+    }else
+    {
+         NSLog(@"vc is not Eaqual self");
+    }
+}
+
+- (void)parseJsonData:(UIViewController *)vc withTag:(int)tag
+{
+    NSLog(@"vc = %@,tag =%d",vc,tag);
+}
 @end

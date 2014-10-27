@@ -108,6 +108,21 @@
 
 - (void)qqLoginBtnAction:(id)sender
 {
+    [[DataEngine sharedDataEngine] reqJsonHttp:self urlStr:@"http://mnews.gw.com.cn/wap/data/ipad/news/index.json" withReqTag:1];
+    
+    [[DataEngine sharedDataEngine] reqJsonHttp:self urlStr:@"http://mnews.gw.com.cn/wap/data/lottery/version.json" withReqTag:2];
+    
+    [[DataEngine sharedDataEngine] reqJsonHttp:self urlStr:@"http://mnews.gw.com.cn/wap/data/ipad/news/jrtt/page_1.json" withReqTag:3];
+    
+    [[DataEngine sharedDataEngine] reqJsonHttp:self urlStr:@"http://mnews.gw.com.cn/wap/news/news/gaoduan/zindex.json" withReqTag:4];
+    
+    [[DataEngine sharedDataEngine] reqJsonHttp:self urlStr:@"http://mnews.gw.com.cn/wap/data/topicnews/today.json" withReqTag:5];
+    
+    [[DataEngine sharedDataEngine] reqJsonHttp:self urlStr:@"http://mnews.gw.com.cn/wap/data/gold/jygz.json" withReqTag:6];
+    
+    [[DataEngine sharedDataEngine] reqJsonHttp:self urlStr:@"http://mnews.gw.com.cn/wap/data/ipad/news/qtsc/page_1.json" withReqTag:7];
+    
+    /*
     // 微信发好友
     id<ISSContent> content = [ShareSDK content:@"帅哥，最近怎么样？"
                                 defaultContent:nil
@@ -154,6 +169,7 @@
                             }
                         }
                     }];
+     */
 
 }
 

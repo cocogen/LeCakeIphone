@@ -11,6 +11,7 @@
 #import "CMTabBar.h"
 #import "CommonDrawFunc.h"
 #import "CommonDefine.h"
+#import "DataEngine.h"
 
 //@class TabBarItem;
 
@@ -94,5 +95,8 @@
  ReturnVal:     NONE
  **************************************************************************/
 - (void)createTabBarItem:(NSString *)title iconImgName:(NSString *)iconImgName selIconImgName:(NSString *)selIconImgName;
+
+- (void)reflashUI:(UIViewController *)vc;
+- (void)parseJsonData:(UIViewController *)vc withTag:(int)tag;
 
 @end
