@@ -14,8 +14,12 @@
 +(DataEngine *)sharedDataEngine;
 
 // http get请求
-- (void)reqAsyncHttp:(id)target urlStr:(NSString *)urlStr userInfo:(NSDictionary *)userInfo;
+- (void)reqAsyncHttpGet:(id)target urlStr:(NSString *)urlStr userInfo:(NSDictionary *)userInfo withReqTag:(int)tag;
+
+// http post请求
+- (void)reqAsyncHttpPost:(id)target urlStr:(NSString *)urlStr userInfo:(NSDictionary *)userInfo withReqTag:(int)tag;
 
 // http json请求
 - (void)reqJsonHttp:(id)target urlStr:(NSString *)jsonURL withReqTag:(int)tag;
+
 @end

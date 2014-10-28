@@ -96,7 +96,9 @@
  **************************************************************************/
 - (void)createTabBarItem:(NSString *)title iconImgName:(NSString *)iconImgName selIconImgName:(NSString *)selIconImgName;
 
-- (void)reflashUI:(UIViewController *)vc;
-- (void)parseJsonData:(UIViewController *)vc withTag:(int)tag;
+- (void)reflashTargetUI:(UIViewController *)vc responseData:(id)responseData withTag:(int)tag;
+- (void)parseJsonDataInUI:(UIViewController *)vc jsonData:(id)jsonData withTag:(int)tag;
+
+- (void)httpResponseError:(UIViewController *)vc errorInfo:(NSError *)error withTag:(int)tag;
 
 @end

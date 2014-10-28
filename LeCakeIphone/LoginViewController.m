@@ -46,6 +46,10 @@
     [self.view addSubview:self.sinaLoginBtn];
     
 }
+-(void)dealloc
+{
+    NSLog(@"%@ dealloc",[self class]);
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -120,7 +124,7 @@
     
     [[DataEngine sharedDataEngine] reqJsonHttp:self urlStr:@"http://mnews.gw.com.cn/wap/data/gold/jygz.json" withReqTag:6];
     
-    [[DataEngine sharedDataEngine] reqJsonHttp:self urlStr:@"http://mnews.gw.com.cn/wap/data/ipad/news/qtsc/page_1.json" withReqTag:7];
+    [[DataEngine sharedDataEngine] reqJsonHttp:self urlStr:@"http://mnews.gw.com.cn/wap/data/news/news/sjzx/txsxw/page_1.json" withReqTag:7];
     
     /*
     // 微信发好友

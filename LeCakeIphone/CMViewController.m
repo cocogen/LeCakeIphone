@@ -232,19 +232,18 @@
     [self.cMTabBarItem setSelectedTitleColor:[UIColor whiteColor]];
 }
 
-- (void)reflashUI:(UIViewController *)vc
+- (void)reflashTargetUI:(UIViewController *)vc responseData:(id)responseData withTag:(int)ta
 {
-    if (vc == self)
-    {
-        NSLog(@"vc is Eaqual self");
-    }else
-    {
-         NSLog(@"vc is not Eaqual self");
-    }
+    
 }
 
-- (void)parseJsonData:(UIViewController *)vc withTag:(int)tag
+- (void)parseJsonDataInUI:(UIViewController *)vc jsonData:(id)jsonData withTag:(int)tag
 {
-    NSLog(@"vc = %@,tag =%d",vc,tag);
+    
+}
+
+- (void)httpResponseError:(UIViewController *)vc errorInfo:(NSError *)error withTag:(int)tag;
+{
+    
 }
 @end
