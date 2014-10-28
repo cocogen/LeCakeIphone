@@ -43,10 +43,16 @@
 
 - (UIView *)setCakeListTitleBar
 {
-    UIImageView * imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, kScreenW, 33)];
+    UIScrollView * scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, kScreenW, 33)];
+    [scrollView setContentSize:CGSizeMake(kScreenW + 100, 33)];
+    scrollView.showsHorizontalScrollIndicator = NO;
+    scrollView.showsVerticalScrollIndicator   = NO;
+    scrollView.bounces = YES;
+    
+    UIImageView * imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, kScreenW + 100, 33)];
     imageView.image = [CommonDrawFunc retinaImageNamed:@"headerTitleBg.png"];
     imageView.userInteractionEnabled = YES;
-    [self.view addSubview:imageView];
+//    [self.view addSubview:imageView];
     
     
     NSArray * titleArray = [NSArray arrayWithObjects:
@@ -67,6 +73,9 @@
                                                bottomLineColor:nil];
     [ self.customSegmentCtl addTarget:self action:@selector(segmentAction:)];
     [imageView addSubview: self.customSegmentCtl];
+    
+    [scrollView addSubview:imageView];
+    [self.view addSubview:scrollView];
     
     return imageView;
 }

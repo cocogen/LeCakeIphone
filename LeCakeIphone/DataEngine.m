@@ -22,7 +22,7 @@
     
     return sharedDataEngineInstance;
 }
-
+// http get请求
 - (void)reqAsyncHttpGet:(id)target urlStr:(NSString *)urlStr userInfo:(NSDictionary *)userInfo withReqTag:(int)tag
 {
     NSDictionary * tmpUserInfo = [NSDictionary dictionaryWithObjectsAndKeys:[NSString stringWithFormat:@"%d",tag],@"tag", nil];
@@ -61,7 +61,7 @@
 
     }];
 }
-
+// http json请求
 - (void)reqJsonHttp:(id)target urlStr:(NSString *)jsonURL withReqTag:(int)tag
 {
      __weak __typeof(CMViewController)*weakSelf = target;
