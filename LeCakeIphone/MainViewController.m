@@ -21,7 +21,7 @@
     self = [super init];
 	if (self)
 	{
-        self.title      = @"蛋糕时刻";
+        self.title      = @"首页";
         self.showNav    = YES;
         self.resident   = YES;
         [self createTabBarItem:self.title iconImgName:@"tray_menu_home_normal.png" selIconImgName:@"tray_menu_home_highlighted.png"];
@@ -33,13 +33,42 @@
 
 - (void)loadUIData
 {
-    UIButton * btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btn setFrame:CGRectMake(100, 200, 80, 80)];
-    [btn setBackgroundColor:[UIColor redColor]];
-    [btn setTitle:@"Login" forState:UIControlStateNormal];
-    [btn setTintColor:[UIColor blackColor]];
-    [btn addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:btn];
+//    UIButton * btn = [UIButton buttonWithType:UIButtonTypeCustom];
+//    [btn setFrame:CGRectMake(100, 200, 80, 80)];
+//    [btn setBackgroundColor:[UIColor redColor]];
+//    [btn setTitle:@"Login" forState:UIControlStateNormal];
+//    [btn setTintColor:[UIColor blackColor]];
+//    [btn addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
+//    [self.view addSubview:btn];
+    [self loadAdvScrollViewUI];
+    
+}
+
+- (void)loadAdvScrollViewUI
+{
+    NSMutableArray *viewsArray = [@[] mutableCopy];
+    
+    for (int i = 0 ; i < 3; i++)
+    {
+        UIImageView *advImgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, kScreenW, 150)];
+        [advImgView setImage:[UIImage imageNamed:[NSString stringWithFormat:@"adv%d.png",i+1]]];
+        [viewsArray addObject:advImgView];
+        
+    }
+    
+    self.mainScorllView = [[CycleScrollView alloc] initWithFrame:CGRectMake(0, 0, kScreenW, 150) animationDuration:3];
+    self.mainScorllView.backgroundColor = [[UIColor purpleColor] colorWithAlphaComponent:0.1];
+    
+    self.mainScorllView.fetchContentViewAtIndex = ^UIView *(NSInteger pageIndex){
+        return viewsArray[pageIndex];
+    };
+    self.mainScorllView.totalPagesCount = ^NSInteger(void){
+        return [viewsArray count];
+    };
+    self.mainScorllView.TapActionBlock = ^(NSInteger pageIndex){
+        NSLog(@"点击了第%d个",pageIndex);
+    };
+    [self.view addSubview:self.mainScorllView];
 
 }
 
@@ -66,9 +95,6 @@
    */
     
 }
-
-
-
 
 //- (void)viewDidLoad
 //{

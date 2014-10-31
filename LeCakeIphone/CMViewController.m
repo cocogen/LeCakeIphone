@@ -232,7 +232,7 @@
     [self.cMTabBarItem setSelectedTitleColor:[UIColor whiteColor]];
 }
 
-- (void)reflashTargetUI:(UIViewController *)vc responseData:(id)responseData withTag:(int)ta
+- (void)reflashTargetUI:(UIViewController *)vc responseData:(id)responseData withTag:(int)tag
 {
     
 }

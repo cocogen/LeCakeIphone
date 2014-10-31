@@ -81,4 +81,16 @@
     
     return menuTree;
 }
+
++ (NSString *) getFilePath:(NSString *)file
+{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSMutableString * filepath = [NSMutableString stringWithCapacity:10];
+    [filepath appendString:documentsDirectory];
+    [filepath appendString:@"/"];
+    [filepath appendString:file];
+    
+    return filepath;
+}
 @end

@@ -90,3 +90,8 @@ typedef enum _GameTypeId
 #define kCakeHomeItemMSTitle            @"慕斯口味"
 #define kCakeHomeItemQKLTitle           @"巧克力味"
 #define kCakeHomeItemNPLTitle           @"拿破仑味"
+
+#define kPhoneNumberKey                 @"phoneNume"
+#define kUserNameKey                    @"userName"
+#define kUserPwdKey                     @"userPwd"
+#define kPhoneNumberKey                 @"phoneNumer"

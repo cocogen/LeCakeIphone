@@ -9,5 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface CommonGetPlistFunc : NSObject
+// 取tabBar 下面多少个VC
 + (NSArray *)getTabBarViewControllers;
+
+// 取数据保存路径
++ (NSString *) getFilePath:(NSString *)file;
 @end

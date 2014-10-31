@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "CMViewController.h"
+#import "CommonGetPlistFunc.h"
 
 @interface DataEngine : NSObject
 // 单态实例

@@ -10,6 +10,11 @@
 #import "AFNetworking.h"
 
 
+@interface DataEngine()
+- (void)initUserInfoData;
+- (void)loadUserInfoData;
+- (void)saveUserInfoData;
+@end
 @implementation DataEngine
 
 +(DataEngine *)sharedDataEngine
@@ -22,6 +27,19 @@
     
     return sharedDataEngineInstance;
 }
+
+- (id)init
+{
+    self = [super init];
+    
+    if (self)
+    {
+        [self initUserInfoData];
+        [self loadUserInfoData];
+    }
+    return self;
+}
+
 // http get请求
 - (void)reqAsyncHttpGet:(id)target urlStr:(NSString *)urlStr userInfo:(NSDictionary *)userInfo withReqTag:(int)tag
 {
@@ -78,4 +96,46 @@
         [strongSelf httpResponseError:strongSelf errorInfo:error withTag:[(NSNumber *)[operation.userInfo objectForKey:@"tag"] intValue]];
     }];
 }
+#pragma --
+#pragma 初始化数据
+- (void)initUserInfoData
+{
+    NSString *filePath = [CommonGetPlistFunc getFilePath:@"user.plist"];
+    NSMutableDictionary *userDic = [[NSMutableDictionary alloc] initWithContentsOfFile:filePath];
+    
+    if (!userDic)
+    {
+        userDic = [[NSMutableDictionary alloc] init];
+        [userDic setValue:@"15001792132" forKey:kPhoneNumberKey];
+        [userDic setValue:@"cocogen" forKey:kUserNameKey];
+        [userDic setValue:@"123456" forKey:kUserPwdKey];
+        
+//        [userDic writeToFile:filePath atomically:YES];
+    }
+    
+}
+- (void)loadUserInfoData
+{
+    NSString *filepath = [CommonGetPlistFunc getFilePath:@"user.plist"];
+    
+    if (filepath != nil)
+    {
+        NSMutableDictionary *userDic = [[NSMutableDictionary alloc] initWithContentsOfFile:filepath];
+        
+        if (userDic != nil)
+        {
+//            // 登录界面设置
+//            bSaveUserName		= ![userDic valueForKey:kSaveUserNameKey] || ([userDic valueForKey:kSaveUserNameKey] && [[userDic valueForKey:kSaveUserNameKey] intValue] != 0) ? YES : NO;
+//            bAutoLogin			= ![userDic valueForKey:kAutoLoginKey] || ([userDic valueForKey:kAutoLoginKey] && [[userDic valueForKey:kAutoLoginKey] intValue] != 0) ? YES : NO;
+//            char *mobile        = [userDic valueForKey:kPhoneNumberKey] ? (char *)[[userDic valueForKey:kPhoneNumberKey] UTF8String] : "";
+//            strcpy(reg_mobilephone, mobile);
+        }
+    }
+}
+- (void)saveUserInfoData
+{
+    NSString *filepath = [CommonGetPlistFunc getFilePath:@"user.plist"];
+    //if (filepath != nil) [reqMainPageSHAndSZStock writeToFile:filepath atomically:YES];
+}
+
 @end

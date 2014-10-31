@@ -19,7 +19,7 @@
     self = [super init];
 	if (self)
 	{
-        self.title      = @"甜甜圈";
+        self.title      = @"我的";
         self.showNav    = YES;
         self.resident   = YES;
         [self createTabBarItem:self.title iconImgName:@"tray_menu_decision_normal.png" selIconImgName:@"tray_menu_descision_highlighted.png"];

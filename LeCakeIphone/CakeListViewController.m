@@ -45,6 +45,8 @@
 {
     UIScrollView * scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, kScreenW, 33)];
     [scrollView setContentSize:CGSizeMake(kScreenW + 100, 33)];
+    // 解决ios8中button 在uiscrollView中不能拖动滚动
+    scrollView.panGestureRecognizer.delaysTouchesBegan = scrollView.delaysContentTouches;
     scrollView.showsHorizontalScrollIndicator = NO;
     scrollView.showsVerticalScrollIndicator   = NO;
     scrollView.bounces = YES;

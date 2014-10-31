@@ -30,59 +30,39 @@
 			<key>IsResident</key>
 			<true/>
 			<key>Title</key>
-			<string>自选</string>
-			<key>KeyName</key>
-			<string>Mine</string>
-			<key>ViewType</key>
-			<string>ViewController</string>
-			<key>ViewName</key>
-			<string>MineViewController</string>
-			<key>IsShowNav</key>
-			<true/>
-			<key>selTabBarIndex</key>
-			<integer>1</integer>
-			<key>dspInTabBarIndex</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>dspInLeftViewId</key>
-			<integer>3</integer>
-			<key>IsResident</key>
-			<true/>
-			<key>ViewType</key>
-			<string>ViewController</string>
-			<key>IsShowNav</key>
-			<string>YES</string>
-			<key>ViewName</key>
-			<string>CakeListViewController</string>
+			<string>蛋糕馆</string>
 			<key>KeyName</key>
 			<string>CakeList</string>
-			<key>Title</key>
-			<string>市场</string>
-			<key>selTabBarIndex</key>
-			<integer>2</integer>
-			<key>dspInTabBarIndex</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>dspInLeftViewId</key>
-			<integer>4</integer>
-			<key>IsResident</key>
-			<true/>
-			<key>Title</key>
-			<string>活动</string>
-			<key>KeyName</key>
-			<string>News</string>
 			<key>ViewType</key>
 			<string>ViewController</string>
 			<key>ViewName</key>
-			<string>GameViewController</string>
+			<string>CakeListViewController</string>
+			<key>IsShowNav</key>
+			<true/>
+			<key>selTabBarIndex</key>
+			<integer>1</integer>
+			<key>dspInTabBarIndex</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>dspInLeftViewId</key>
+			<integer>3</integer>
+			<key>IsResident</key>
+			<true/>
+			<key>ViewType</key>
+			<string>ViewController</string>
 			<key>IsShowNav</key>
 			<string>YES</string>
+			<key>ViewName</key>
+			<string>PersonOrderViewController</string>
+			<key>KeyName</key>
+			<string>PersonOrder</string>
+			<key>Title</key>
+			<string>定制</string>
 			<key>selTabBarIndex</key>
-			<integer>3</integer>
+			<integer>2</integer>
 			<key>dspInTabBarIndex</key>
-			<integer>3</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>dspInLeftViewId</key>
@@ -90,19 +70,19 @@
 			<key>IsResident</key>
 			<true/>
 			<key>Title</key>
-			<string>更多</string>
+			<string>我的</string>
 			<key>ViewType</key>
 			<string>ViewController</string>
 			<key>IsShowNav</key>
 			<string>YES</string>
 			<key>ViewName</key>
-			<string>MoreViewController</string>
+			<string>MineViewController</string>
 			<key>KeyName</key>
-			<string>Cloud</string>
+			<string>Mine</string>
 			<key>selTabBarIndex</key>
-			<integer>4</integer>
+			<integer>3</integer>
 			<key>dspInTabBarIndex</key>
-			<integer>4</integer>
+			<integer>3</integer>
 		</dict>
 	</array>
 </dict>
