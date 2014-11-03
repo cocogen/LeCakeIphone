@@ -38,6 +38,8 @@
 		6342E70C19F8D3E900A97453 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6342E70B19F8D3E900A97453 /* libsqlite3.dylib */; };
 		634680901A00B380008F2732 /* UIDevice+IdentifierAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6346808D1A00B380008F2732 /* UIDevice+IdentifierAddition.m */; };
 		634680911A00B380008F2732 /* NSString+MD5Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6346808F1A00B380008F2732 /* NSString+MD5Addition.m */; };
+		634CCBCD1A072AA900520B77 /* MainLeCakeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 634CCBCC1A072AA900520B77 /* MainLeCakeTableCell.m */; };
+		634CCBCF1A07324A00520B77 /* leCakeCellTip.png in Resources */ = {isa = PBXBuildFile; fileRef = 634CCBCE1A07324A00520B77 /* leCakeCellTip.png */; };
 		63580F3319FA1F5B0045824A /* res2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 63580F3219FA1F5B0045824A /* res2.jpg */; };
 		63895F7D19F6A48B008A5247 /* tray_menu_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 63895F7C19F6A48B008A5247 /* tray_menu_bg.png */; };
 		63895F8019F6AD20008A5247 /* NewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63895F7F19F6AD20008A5247 /* NewsDetailViewController.m */; };
@@ -159,6 +161,9 @@
 		6346808D1A00B380008F2732 /* UIDevice+IdentifierAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+IdentifierAddition.m"; sourceTree = "<group>"; };
 		6346808E1A00B380008F2732 /* NSString+MD5Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5Addition.h"; sourceTree = "<group>"; };
 		6346808F1A00B380008F2732 /* NSString+MD5Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5Addition.m"; sourceTree = "<group>"; };
+		634CCBCB1A072AA900520B77 /* MainLeCakeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainLeCakeTableCell.h; sourceTree = "<group>"; };
+		634CCBCC1A072AA900520B77 /* MainLeCakeTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainLeCakeTableCell.m; sourceTree = "<group>"; };
+		634CCBCE1A07324A00520B77 /* leCakeCellTip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leCakeCellTip.png; sourceTree = "<group>"; };
 		63580F3219FA1F5B0045824A /* res2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = res2.jpg; sourceTree = "<group>"; };
 		63895F7C19F6A48B008A5247 /* tray_menu_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tray_menu_bg.png; sourceTree = "<group>"; };
 		63895F7E19F6AD20008A5247 /* NewsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsDetailViewController.h; sourceTree = "<group>"; };
@@ -320,6 +325,8 @@
 			children = (
 				631242DB19FA2C2200A0468C /* CustomSegmentControl.h */,
 				631242DC19FA2C2200A0468C /* CustomSegmentControl.m */,
+				634CCBCB1A072AA900520B77 /* MainLeCakeTableCell.h */,
+				634CCBCC1A072AA900520B77 /* MainLeCakeTableCell.m */,
 			);
 			name = CMCustomComponents;
 			sourceTree = "<group>";
@@ -739,6 +746,7 @@
 		63A483101A03838D009BBF01 /* MainViewImgs */ = {
 			isa = PBXGroup;
 			children = (
+				634CCBCE1A07324A00520B77 /* leCakeCellTip.png */,
 				63A483131A0383AB009BBF01 /* adv1.png */,
 				63A483111A0383A5009BBF01 /* adv2.png */,
 				63A483151A038649009BBF01 /* adv3.png */,
@@ -892,6 +900,7 @@
 				63A7313319F69B930090B157 /* tray_menu_descision_highlighted.png in Resources */,
 				6342E6F919F8D34C00A97453 /* WeiboSDK.bundle in Resources */,
 				63A7313719F69B930090B157 /* tray_menu_market_normal.png in Resources */,
+				634CCBCF1A07324A00520B77 /* leCakeCellTip.png in Resources */,
 				63F4982F19F75ABE001AF8AD /* navigationBarBGIOS7.png in Resources */,
 				63A7313619F69B930090B157 /* tray_menu_market_highlighted.png in Resources */,
 				63F4983019F75ABE001AF8AD /* navigationBarBG.png in Resources */,
@@ -944,6 +953,7 @@
 				639DCDB419F893590073FBEF /* AFHTTPSessionManager.m in Sources */,
 				639DCDD619F893D40073FBEF /* AFNetworkActivityIndicatorManager.m in Sources */,
 				634680911A00B380008F2732 /* NSString+MD5Addition.m in Sources */,
+				634CCBCD1A072AA900520B77 /* MainLeCakeTableCell.m in Sources */,
 				638E94A219F6662500A06546 /* MainViewController.m in Sources */,
 				639DCDDD19F893D40073FBEF /* UIWebView+AFNetworking.m in Sources */,
 				638E94A819F6665B00A06546 /* CakeListViewController.m in Sources */,

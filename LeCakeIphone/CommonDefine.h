@@ -37,6 +37,7 @@
 #define kSysStatusBarHeight		MIN([UIApplication sharedApplication].statusBarFrame.size.width, [UIApplication sharedApplication].statusBarFrame.size.height)		// 系统状态栏高度
 #define kSysNavBarHeight        44      //导航栏高度
 #define kSysHorzNavBarHeight	32		// 横屏系统导航栏高度
+#define kLeCakeTabBarHeight     49      // leCakeTabBar高度
 
 
 

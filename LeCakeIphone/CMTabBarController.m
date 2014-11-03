@@ -31,7 +31,7 @@
 - (void)initExtendedData
 {
     [super initExtendedData];
-    _tabBarHeight   = 49;
+    _tabBarHeight   = kLeCakeTabBarHeight;
     _isPopToRoot = YES;
 }
 

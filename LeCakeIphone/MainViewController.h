@@ -9,7 +9,7 @@
 #import "CMViewController.h"
 #import "CycleScrollView.h"
 
-@interface MainViewController : CMViewController
-@property (nonatomic,strong)UITableView * mianTable;// 主要table
-@property (nonatomic , retain) CycleScrollView *mainScorllView;
+@interface MainViewController : CMViewController<UITableViewDataSource,UITableViewDelegate>
+@property (nonatomic, strong) UITableView   * cakeListTable;// 主要table
+@property (nonatomic, strong) CycleScrollView *mainScorllView;//滑动广告
 @end
